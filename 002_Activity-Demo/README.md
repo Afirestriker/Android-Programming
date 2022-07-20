@@ -6,4 +6,4 @@
  - On button click --> Copy text from 'EditText' View and paste it on 'TextView' control
 
 ### :camera: Output:
-![Output](ActivityDemo1_App_Screenshot.png | width=250)
+<img alt="002_Activity-Demo" src="ActivityDemo1_App_Screenshot.png" width="250" height="250" />
