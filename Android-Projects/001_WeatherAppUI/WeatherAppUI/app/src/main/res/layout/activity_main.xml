@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Date: 04th March 2022 -->
+
+<!-- Standard Action Bar (Shows App Name)-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!-- This is for custom bar -->
+    <RelativeLayout
+        android:id="@+id/RLActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/lightBlue">
+
+        <!-- This is for Location Image -->
+        <ImageView
+            android:id="@+id/imgLocation"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/ic_location_on_white_24dp" />
+
+        <!-- This is for Text City Name -->
+        <TextView
+            android:id="@+id/txtCityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imgLocation"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:text="@string/pune"/>
+
+        <!-- This is for Text Country Name -->
+        <TextView
+            android:id="@+id/txtCountryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/txtCityName"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:text="@string/india"
+            />
+
+        <!-- This is for Setting image -->
+        <ImageView
+            style="?android:borderlessButtonStyle"
+            android:id="@+id/imgSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_settings_white_24dp" />
+
+    </RelativeLayout>
+    <!-- Close: Relative layout id: RLActionBar i.e. Custom Bar-->
+
+    <!-- Middle Part begins -->
+    <RelativeLayout
+        android:id="@+id/RLMiddlePart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/RLActionBar">
+
+        <!-- This is for mountain image in background -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="@color/Greyish"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mountain_bg" />
+
+        <!-- This is for Date text -->
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:text="07/03/2022"
+            />
+
+        <!-- This is for Day text -->
+        <TextView
+            android:id="@+id/txtDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDate"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Monday"/>
+
+        <!-- This is for Partly Cloudy Image Icon -->
+        <ImageView
+            android:id="@+id/imgPartlyCloudy"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/weather_partlycloudy"
+            />
+
+        <!-- This is for Temperature value -->
+        <TextView
+            android:id="@+id/txtTempValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDay"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/white"
+            android:textSize="200sp"
+            android:text="32\u00B0"/>
+
+        <!-- This is for partly cloudy 45/36 text-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTempValue"
+            android:layout_centerHorizontal="true"
+            android:background="#CE252424"
+            android:padding="10dp"
+            android:text="Partly Cloudy 45/36\u00B0"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    <!-- Close: ID: RLMiddlePart (Middle Part close) -->
+
+    <!-- Horizontal scroll view to display weather of whole week -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <!-- LinearLayout for displaying days weather side by side -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#80000000">
+
+            <!-- Monday Card -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="20/25\u00B0"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/weather_lightning"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Mon"/>
+            </LinearLayout>
+            <!-- Close: Monday Card -->
+
+            <!-- Tuesday Card -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="35/36\u00B0"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/weather_lightning"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Tue"/>
+            </LinearLayout>
+            <!-- Close: Tuesday Card -->
+
+            <!-- Wednesday Card -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="21/30\u00B0"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/weather_lightning"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Wed"/>
+            </LinearLayout>
+            <!-- Close: Wednesday Card -->
+
+            <!-- Thursday Card -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="35/45\u00B0"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/weather_lightning"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Thu"/>
+            </LinearLayout>
+            <!-- Close: Thursday Card -->
+
+            <!-- Friday Card -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="35/36\u00B0"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/weather_lightning"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Fri"/>
+            </LinearLayout>
+            <!-- Close: Friday Card -->
+
+            <!-- Saturday Card -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="35/36\u00B0"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/weather_lightning"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Sat"/>
+            </LinearLayout>
+            <!-- Close: Saturday Card -->
+
+            <!-- Sunday Card -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="35/36\u00B0"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/weather_lightning"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Sun"/>
+            </LinearLayout>
+            <!-- Close: Sunday Card -->
+
+        </LinearLayout>
+        <!-- Close:  LinearLayout for displaying days weather side by side -->
+
+    </HorizontalScrollView>
+    <!-- Close: Horizontal scroll view to display weather of whole week -->
+
+</RelativeLayout>
+<!-- Close: main parent layout -->

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WeatherAppUI</string>
+    <string name="pune">Pune</string>
+    <string name="india">India</string>
+</resources>
