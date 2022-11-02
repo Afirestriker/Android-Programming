@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Date: 08th March 2022
+Created By: Ashish Agrawal
+Topic: Basic Calculator Application Main Activity Design-->
+
+<!-- Open: Top Parent Relative Layout -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- This is for Heading (Basic Calculator) -->
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:text="@string/title"
+        />
+
+    <!-- This is for Number 1 -->
+    <EditText
+        android:id="@+id/editTxtNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:hint="@string/editTextNum1"
+        android:inputType="numberDecimal"
+        android:maxWidth="350dp"
+        android:minWidth="350dp"
+        android:textColorHint="@color/teal_200"
+        android:textSize="22sp"
+        />
+
+    <!-- This is for Number 2 -->
+    <EditText
+        android:id="@+id/editTxtNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTxtNum1"
+        android:layout_centerHorizontal="true"
+        android:minWidth="350dp"
+        android:maxWidth="350dp"
+        android:gravity="center"
+        android:hint="@string/editTextNum2"
+        android:textColorHint="@color/teal_200"
+        android:inputType="numberDecimal"
+        android:textSize="22sp"/>
+
+    <!-- LLOptions Button Container (+, -, /, *) -->
+    <LinearLayout
+        android:id="@+id/LLOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/editTxtNum2"
+        android:layout_marginTop="20dp"
+        android:padding="15dp">
+
+        <!-- This is Add Button -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="6dp"
+            android:textSize="20sp"
+            android:text="@string/btnAdd"
+            android:onClick="BtnAdd"/>
+
+        <!-- This is Sub Button -->
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="6dp"
+            android:textSize="20sp"
+            android:text="@string/btnSub"
+            android:onClick="BtnSub"/>
+
+        <!-- This is Div Button -->
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="6dp"
+            android:textSize="20sp"
+            android:text="@string/btnDiv"
+            android:onClick="BtnDiv"/>
+
+        <!-- This is Mul Button -->
+        <Button
+            android:id="@+id/btnMul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="6dp"
+            android:textSize="20sp"
+            android:text="@string/btnMul"
+            android:onClick="BtnMul"/>
+
+    </LinearLayout>
+    <!-- Close: LLOptions Button Container (+, -, /, *) -->
+
+    <!-- This is for RESET Button -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_below="@id/LLOptions"
+        android:layout_centerHorizontal="true"
+        android:paddingVertical="10dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="26sp"
+        android:letterSpacing="0.1"
+        android:text="@string/btnReset"
+        android:onClick="BtnReset"/>
+
+    <!-- This is TextView for Showing Calculation Result -->
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnReset"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/light_blue"
+        android:paddingVertical="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:letterSpacing="0.1"
+        android:textSize="26sp"
+        android:hint="@string/txtHintResult"
+        android:textColorHint="@color/white"
+        />
+
+</RelativeLayout>
+<!-- Close: Top Parent Relative Layout -->

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BasicCalc</string>
+
+    <string name="title">Basic Calculator</string>
+    <string name="editTextNum1">Enter First Number</string>
+    <string name="editTextNum2">Enter Second Number</string>
+    <string name="btnAdd">+</string>
+    <string name="btnSub">-</string>
+    <string name="btnDiv">/</string>
+    <string name="btnMul">*</string>
+    <string name="btnReset">RESET</string>
+    <string name="txtHintResult">Result</string>
+
+
+</resources>
