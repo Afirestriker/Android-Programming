@@ -10,4 +10,4 @@
  - Learning how to pass and retrieve message from one Activity to another Activity
 
 ### :camera: Output:
-<img alt="005_Adv-Explicit-Implicit-Intent" src="ProjectScreenshot/Advanced_Intent.JPG" width="450" height="950" />
+<img alt="005_Adv-Explicit-Implicit-Intent" src="ProjectScreenshot/Advanced_Intent.JPG" width="" height="950" />
