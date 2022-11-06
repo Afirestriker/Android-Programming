@@ -11,6 +11,5 @@
  - Understanding the working of “Explicit intent” to redirect from one Activity to another inside the same application.
 
 ### :camera: Output:
-<img alt="003_UIElements_Screenshot1" src="ProjectScreenshot/UIElements_App_Screenshot.png" width="450" height="950" />
-<img alt="003_UIElements_Screenshot1" src="ProjectScreenshot/UIElements_Text_Increase_Screenshot.png" width="450" height="950" />
-<img alt="003_UIElements_Screenshot1" src="ProjectScreenshot/UIElements_Text_Decrease_Screenshot.png" width="450" height="950" />
+<img alt="004_Explicit-Intent" src="ExplicitIntent_Activity1(MainActivity)_Screenshot.png" width="450" height="950" />
+<img alt="004_Explicit-Intent" src="ExplicitIntent_Activity2(MainActivity)_Screenshot.png" width="450" height="950" />
