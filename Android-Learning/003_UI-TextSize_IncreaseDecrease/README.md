@@ -1,7 +1,7 @@
 ## UIElements - Android Project
 
 ### :ski: Steps:
- - Add 1 TextView and 2 button control
+ - Add 1 ScrollView, 1 TextView and 2 button control
  - Paste some text in TextView view control
  - On 'INCREASE' button click --> Increase text size for TextView
  - On 'DECREASE' button click --> Decrese text size for TextView
