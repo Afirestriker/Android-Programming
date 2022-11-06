@@ -1,7 +1,7 @@
 ## Add Number - Android Project
 
 Designed Android Project, for displaying:
-- inbuilt and custom dialog
+- Inbuilt and custom dialog
 - Date Picker
 
 ### :camera: Output:
