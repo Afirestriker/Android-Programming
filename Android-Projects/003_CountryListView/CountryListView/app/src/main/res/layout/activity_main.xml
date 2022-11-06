@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Date: 14th March 2022
+Created By: Ashish Agrawal
+Topic: Showing Country Flag List -->
+
+<!--Top Parent -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <!-- Title Text "Country List View" -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/purple_200"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="@string/title" />
+
+    <!--ScrollView for countryList Scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="21dp">
+
+        <!--Country List View parent -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/cream">
+
+            <!--China Img and Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/imgchina"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:text="@string/china"
+                />
+
+            <!--France Img and Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/imgfrance"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:text="@string/france" />
+
+            <!-- Germany Img & Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/imggermany"
+                android:gravity="center"
+                android:text="@string/germany"
+                android:textSize="30sp"
+                android:textColor="@color/black" />
+
+            <!-- GreatBritain Img & Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/imggb"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:text="@string/GreatBritain"/>
+
+            <!-- India Img & Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/imgindia"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:text="@string/india" />
+
+            <!-- Italy Flag & text  -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/imgitaly"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:text="@string/italy" />
+
+            <!-- Japan Flag & Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/imgjapan"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:text="@string/japan"/>
+
+            <!-- Poland Flag & text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/imgpoland"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:text="@string/poland" />
+
+            <!-- Spain Flag & Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/imgspain"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:text="@string/spain" />
+
+            <!-- USA Flag & Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/imgusa"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:text="@string/USA"/>
+
+        </LinearLayout>
+        <!-- Close: Country List View Parent -->
+
+    </ScrollView>
+    <!-- Close: ScrollView -->
+
+</RelativeLayout>
+<!-- Close: Top parent -->

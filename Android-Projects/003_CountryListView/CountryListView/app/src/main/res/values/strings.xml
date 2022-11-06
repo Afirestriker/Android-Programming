@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CountryListView</string>
+    <string name="title">Country List View</string>
+    <string name="france">France</string>
+    <string name="china">China</string>
+    <string name="germany">Germany</string>
+    <string name="GreatBritain">Great Britain (UK)</string>
+    <string name="india">India</string>
+    <string name="italy">Italy</string>
+    <string name="japan">Japan</string>
+    <string name="poland">Poland</string>
+    <string name="spain">Spain</string>
+    <string name="USA">USA</string>
+</resources>

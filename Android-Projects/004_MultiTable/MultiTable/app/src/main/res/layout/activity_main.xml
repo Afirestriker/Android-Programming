@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--Header-->
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:text="Welcome To MultiTable"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <!--Enter Number-->
+    <EditText
+        android:id="@+id/editTextEnterNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Number Here"
+        android:inputType="number"
+        android:paddingTop="25dp"
+        android:textColorHint="#757575"
+        android:autofillHints="" />
+
+    <!--Submit Button-->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showTable"
+        android:text="Submit" />
+
+    <!--View Result 1-->
+    <TextView
+        android:id="@+id/textViewResult1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textSize="18sp" />
+
+    <!--View Result 2-->
+    <TextView
+        android:id="@+id/textViewResult2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textSize="18sp" />
+
+    <!--View Result 3-->
+    <TextView
+        android:id="@+id/textViewResult3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textSize="18sp" />
+
+    <!--View Result 4-->
+    <TextView
+        android:id="@+id/textViewResult4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textSize="18sp" />
+
+    <!--View Result 5-->
+    <TextView
+        android:id="@+id/textViewResult5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textSize="18sp" />
+
+    <!--View Result 6-->
+    <TextView
+        android:id="@+id/textViewResult6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textSize="18sp" />
+
+    <!--View Result 7-->
+    <TextView
+        android:id="@+id/textViewResult7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textSize="18sp" />
+
+    <!--View Result 8-->
+    <TextView
+        android:id="@+id/textViewResult8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textSize="18sp" />
+
+    <!--View Result 9-->
+    <TextView
+        android:id="@+id/textViewResult9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textSize="18sp" />
+
+    <!--View Result 10-->
+    <TextView
+        android:id="@+id/textViewResult10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,4 +1,4 @@
-## WeatherAppUI - Androdi Project
+## Calc - Android Project
 
 ### :camera: Output:
 <img alt="002_CalcApp" src="BasicCalc App Screenshot.png" width="450" height="950" />

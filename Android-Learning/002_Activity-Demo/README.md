@@ -1,4 +1,4 @@
-## AcitivityDemo1 - Androdi Project
+## AcitivityDemo1 - Android Project
 
 ### :ski: Steps:
  - Add 1 EditText, 1 TextView and 1 button control
