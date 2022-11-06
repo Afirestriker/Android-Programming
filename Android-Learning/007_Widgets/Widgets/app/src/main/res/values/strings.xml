@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Widgets</string>
+
+    <string name="This_is_Simple_Button">This is Simple Button</string>
+    <string name="Enter_Your_Mobile_Number">Enter Your Mobile Number</string>
+    <string name="Hello">Hello</string>
+    <string name="Veg_NonVeg">Veg/Non-Veg</string>
+    <string name="home_delivery">Home Delivery</string>
+    <string name="Option_2">Option 2</string>
+    <string name="Option_1">Option 1</string>
+</resources>
