@@ -7,7 +7,7 @@
  - On 'DECREASE' button click --> Decrese text size for TextView & change color to red.
 
 ### Things Learned
- - Adding ScrollView  LinearLayout (orientation: Vertical)  TextView (For paragraph) so that when text size increase a lot and so beyond device boundary, we can scroll and read complete paragraph.
+ - Adding ScrollView > LinearLayout (orientation: Vertical) > TextView (For paragraph) so that when text size increase a lot and so beyond device boundary, we can scroll and read complete paragraph.
  - Java code adding button OnClickListener   Change text size (increase / decrease) and color change (Green / Red)
  - Adding Toast, which is a text popup. Suppose button increase is click, then toast appear “Increase Button Clicked”
 
