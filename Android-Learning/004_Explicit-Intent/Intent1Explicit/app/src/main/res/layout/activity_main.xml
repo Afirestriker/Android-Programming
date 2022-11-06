@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This is main Activity page
+Understanding how "Explicit Intent" work in android, by creating BasicLogin Application
+
+Explicit Intent: Means going to next Activity, which reside inside the same application
+
+Date: 16th March 2022
+Created By: Ashish Agrawal
+Topic: Basic Login Page which jump to next page inside the same project on successful validation
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextUN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/EnterUserName"
+        android:inputType="textPersonName"
+        android:text=""/>
+
+    <EditText
+        android:id="@+id/editTextUP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/EnterPassword"
+        />
+
+    <!-- Press Alt+Enter on the word Login for onClick attribute to implement it in Java File -->
+    <Button
+        android:onClick="login"
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Login"
+        />
+
+
+</LinearLayout>
+<!-- Close: Top Parent LinearLayout -->
