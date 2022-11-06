@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Date: 12th April 2022
+Created By: Ashish Agrawal
+Title: Understanding the use of SQLite Database with android -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--Edit text to enter course name-->
+    <EditText
+        android:id="@+id/editTxtCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autofillHints=""
+        android:hint="Enter Course Name"
+        android:inputType="text"
+        />
+
+    <!--Edit text to enter course Duration-->
+    <EditText
+        android:id="@+id/editTxtCourseDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autofillHints=""
+        android:hint="Enter Course Duration"
+        android:inputType="text"
+        />
+
+    <!--Edit text to enter course Tracks-->
+    <EditText
+        android:id="@+id/editTxtCourseTracks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autofillHints=""
+        android:hint="Enter Course Tracks"
+        android:inputType="text"
+        />
+
+    <!--Edit text to enter course Description-->
+    <EditText
+        android:id="@+id/editTxtCourseDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autofillHints=""
+        android:hint="Enter Course Description"
+        android:inputType="text"
+        />
+
+    <!--Button for adding new course-->
+    <Button
+        android:id="@+id/btnAddCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Add Course"
+        android:textAllCaps="false"
+        />
+
+
+</LinearLayout>
