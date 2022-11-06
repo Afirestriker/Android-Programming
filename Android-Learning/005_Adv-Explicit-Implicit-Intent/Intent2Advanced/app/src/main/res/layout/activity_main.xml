@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This is MainActivity XML page of "intent2" android project
+
+Date: 16th March 2022
+Created By: Ashish Agrawal
+-->
+
+<!-- Top Parent Relative Layout -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<!-- First LinearLayout for Explicit Intent -->
+    <LinearLayout
+        android:id="@+id/LLExplicit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@color/LLbg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="@string/ExampleOfExplicitIntent" />
+
+        <!-- Add text to pass to next Activity on button click -->
+        <EditText
+            android:id="@+id/etxText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/TypeAnything"
+            android:autofillHints=""
+            android:inputType="textPersonName" />
+
+        <!-- TextView for Return Message -->
+        <TextView
+            android:id="@+id/txtRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="" />
+
+        <!-- Button for Going to Another Activity -->
+        <Button
+            android:id="@+id/btnNewActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="@string/NewActivity" />
+
+    </LinearLayout>
+<!-- Close: First LinearLayout (Explicit Intent) -->
+
+<!-- Second LinearLayout for Implicit Intent -->
+    <LinearLayout
+        android:id="@+id/LLImplicit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LLExplicit"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@color/LLbg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/ExampleOfImplicitIntent" />
+
+        <!-- EditText for Adding Message -->
+        <EditText
+            android:id="@+id/etxMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/EnterValidURL"
+            android:autofillHints=""
+            android:inputType="textPersonName" />
+
+        <!-- Button to Send Typed Message-->
+        <Button
+            android:id="@+id/btnSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="@string/SendMessage" />
+
+    </LinearLayout>
+<!-- Close: LinearLayout-->
+
+</RelativeLayout>
+<!-- Close: Top Parent RelativeLayout -->

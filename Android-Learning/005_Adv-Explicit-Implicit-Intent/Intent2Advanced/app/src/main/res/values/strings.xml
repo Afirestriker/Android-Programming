@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Intent2Advanced</string>
+    <string name="TypeAnything">Type Anything</string>
+    <string name="ExampleOfExplicitIntent">Example Of Explicit Intent</string>
+    <string name="NewActivity">Start Any Activity</string>
+    <string name="ExampleOfImplicitIntent">Example Of Implicit Intent</string>
+    <string name="EnterValidURL">Enter Valid URL</string>
+    <string name="SendMessage">Send Message</string>
+    <string name="Submit">Submit</string>
+    <string name="Enter_msg_To_Send_Back">Enter Message To Send Back</string>
+</resources>
