@@ -12,4 +12,4 @@
 
 ### :camera: Output:
 <img alt="004_Explicit-Intent" src="ExplicitIntent_Activity1(MainActivity)_Screenshot.png" width="450" height="950" />
-<img alt="004_Explicit-Intent" src="ExplicitIntent_Activity2(MainActivity)_Screenshot.png" width="450" height="950" />
+<img alt="004_Explicit-Intent" src="ExplicitIntent_Activity2(welcomeActivity)_Screenshot.png" width="450" height="950" />
