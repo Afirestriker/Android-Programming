@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Google_Map_Demo</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <!--Note that MAPS_API_KEY always starts with AIza-->
+    <string name="MAPS_API_KEY">AIzaSyClKG7NRj6VSUKzAD-n3pSdHC1tilhxpxs</string>
+
+</resources>
