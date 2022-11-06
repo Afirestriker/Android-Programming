@@ -1,6 +1,6 @@
 ## WeatherAppUI - Android Project
 
-### Things Learned  
+### :thread: Things Learned  
 - Using Relative layout as top-parent and adding LinearLayout inside RelativeLayout
 - Adding Custom Action Bar
 - Adding Image inside application
