@@ -1,4 +1,4 @@
-## Add Number - Android Project
+## Dialog And Date Picker - Android Project
 
 Designed Android Project, for displaying:
 - Inbuilt and custom dialog

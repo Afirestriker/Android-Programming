@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Date: 29th March 2022
+Created By: Ashish Agrawal -->
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/android"
+        android:title="Android"/>
+
+    <item
+        android:id="@+id/java"
+        android:title="Java"/>
+
+    <item
+        android:id="@+id/python"
+        android:title="Python"/>
+
+    <!-- Menu Actions Bars -->
+    <item
+        android:id="@+id/more_action_bars"
+        android:icon="@drawable/info"
+        android:title=""
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/search"
+                android:title="Share"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/about_us"
+                android:icon="@drawable/contact"
+                android:title="About Us"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/settings"
+                android:title="Settings"
+                app:showAsAction="ifRoom" />
+
+        </menu>
+
+    </item>
+    <!-- Close: Menu Action Bars -->
+
+</menu>
