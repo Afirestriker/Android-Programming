@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="28sp"
+        android:text="Add Number"/>
+
+    <EditText
+        android:id="@+id/editTextNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:hint="Enter Number 1"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:width="200dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNum1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:hint="Enter Number 2"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:width="200dp"
+        />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNum2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        />
+
+</RelativeLayout>
